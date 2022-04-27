@@ -27,5 +27,5 @@ def callback_nofity():
 
   access_token = notify.get_token(code, notify.client_id, notify.client_secret, notify.redirect_uri)
 
-  return f'恭喜完成 LINE Notify 連動！請關閉此視窗。{access_token}'
+  return '恭喜完成 LINE Notify 連動！請關閉此視窗。'
   
