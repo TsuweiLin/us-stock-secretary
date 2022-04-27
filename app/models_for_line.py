@@ -6,7 +6,7 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 def echo(event):
   user_id = event.source.user_id
   username = line_bot_api.get_profile(event.source.user_id).display_name
-  line_bot_api.reply_message(event.reply_token,TextSendMessage(text=event.message.text))
+  # line_bot_api.reply_message(event.reply_token,TextSendMessage(text=event.message.text))
   line_bot_api.reply_message(event.reply_token,TextSendMessage(text=notify.create_auth_link(user_id)))
   
 
